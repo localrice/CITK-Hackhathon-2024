@@ -92,7 +92,7 @@ else:
         text = valid_texts[0]
     else:
         text = "No Text Found"
-    print(text)
+    print("Number plate detected: ",text)
     # Display the detected text on the original image
     font = cv.FONT_HERSHEY_SIMPLEX
     res = cv.putText(img, text=text, org=(approx[0][0][0], approx[1][0][1] + 60), 
